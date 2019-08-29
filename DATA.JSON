@@ -1,0 +1,92 @@
+{
+    "path": [
+        {
+            "x": 12,
+            "y": 14,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 15,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 13,
+            "y": 16,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 13,
+            "y": 17,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 18,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 19,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 20,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 21,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 22,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 23,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 24,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 12,
+            "y": 25,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 13,
+            "y": 26,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 14,
+            "y": 27,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 14,
+            "y": 28,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 15,
+            "y": 29,
+            "roomName": "W32S22"
+        },
+        {
+            "x": 16,
+            "y": 30,
+            "roomName": "W32S22"
+        }
+    ],
+    "ops": 32,
+    "cost": 18,
+    "incomplete": false
+}
