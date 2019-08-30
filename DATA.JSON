@@ -1,92 +1,118 @@
-{
-    "path": [
-        {
-            "x": 12,
-            "y": 14,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 15,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 13,
-            "y": 16,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 13,
-            "y": 17,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 18,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 19,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 20,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 21,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 22,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 23,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 24,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 12,
-            "y": 25,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 13,
-            "y": 26,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 14,
-            "y": 27,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 14,
-            "y": 28,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 15,
-            "y": 29,
-            "roomName": "W32S22"
-        },
-        {
-            "x": 16,
-            "y": 30,
-            "roomName": "W32S22"
+[
+    {
+        "type": "structure",
+        "structure": {
+            "room": {
+                "name": "W32S22",
+                "energyAvailable": 239,
+                "energyCapacityAvailable": 800,
+                "visual": {
+                    "roomName": "W32S22"
+                }
+            },
+            "pos": {
+                "x": 16,
+                "y": 31,
+                "roomName": "W32S22"
+            },
+            "id": "5d69398242c42a63a046b5e7",
+            "store": {
+                "energy": 0
+            },
+            "storeCapacity": 2000,
+            "ticksToDecay": 444,
+            "hits": 235000,
+            "hitsMax": 250000,
+            "structureType": "container"
         }
-    ],
-    "ops": 32,
-    "cost": 18,
-    "incomplete": false
-}
+    },
+    {
+        "type": "terrain",
+        "terrain": "plain"
+    },
+    {
+        "type": "tombstone",
+        "tombstone": {
+            "room": {
+                "name": "W32S22",
+                "energyAvailable": 239,
+                "energyCapacityAvailable": 800,
+                "visual": {
+                    "roomName": "W32S22"
+                }
+            },
+            "pos": {
+                "x": 16,
+                "y": 31,
+                "roomName": "W32S22"
+            },
+            "id": "5d6945a32d46c820daf1b537",
+            "deathTime": 10056193,
+            "store": {
+                "energy": 0
+            },
+            "ticksToDecay": 10,
+            "creep": {
+                "room": {
+                    "name": "W32S22",
+                    "energyAvailable": 239,
+                    "energyCapacityAvailable": 800,
+                    "visual": {
+                        "roomName": "W32S22"
+                    }
+                },
+                "pos": {
+                    "x": 16,
+                    "y": 31,
+                    "roomName": "W32S22"
+                },
+                "id": "5d6935660ebed21e3276caf6",
+                "name": "Mine10054674",
+                "spawning": false,
+                "my": true,
+                "body": [
+                    {
+                        "type": "work",
+                        "hits": 0
+                    },
+                    {
+                        "type": "work",
+                        "hits": 0
+                    },
+                    {
+                        "type": "work",
+                        "hits": 0
+                    },
+                    {
+                        "type": "work",
+                        "hits": 0
+                    },
+                    {
+                        "type": "work",
+                        "hits": 0
+                    },
+                    {
+                        "type": "carry",
+                        "hits": 0
+                    },
+                    {
+                        "type": "move",
+                        "hits": 0
+                    }
+                ],
+                "owner": {
+                    "username": "TrojanX"
+                },
+                "ticksToLive": 1,
+                "carryCapacity": 50,
+                "carry": {
+                    "energy": 0
+                },
+                "fatigue": 0,
+                "hits": 0,
+                "hitsMax": 700,
+                "saying": null
+            }
+        }
+    }
+]
