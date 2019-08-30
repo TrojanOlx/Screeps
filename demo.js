@@ -1,49 +1,63 @@
-let creep = Game.creeps.John;
 
-let goals = _.map(creep.room.find(FIND_SOURCES), function (source) {
-    //我们实际上不能在资源上行走——将“range”设置为1
-    //我们沿着它走。
-    return { pos: source.pos, range: 1 };
-});
 
-let ret = PathFinder.search(
-    creep.pos, goals,
-    {
-        //我们需要将违约成本设置得更高，以便我们
-        //可以在“roomCallback”中降低道路成本
-        plainCost: 2,
-        swampCost: 10,
 
-        roomCallback: function (roomName) {
 
-            let room = Game.rooms[roomName];
-            //在这个例子中，“room”将永远存在，但是自从
-            // PathFinder支持跨多个房间的搜索
-            //你应该小心!
-            if (!room) return;
-            let costs = new PathFinder.CostMatrix;
+// 获取控制器到矿源的路线
+function search(origin, bourns) {
+    // 获取 creep
+    let creep = Game.creeps.John;
 
-            room.find(FIND_STRUCTURES).forEach(function (struct) {
-                if (struct.structureType === STRUCTURE_ROAD) {
-                    //比起平铺的瓷砖，更喜欢铺路
-                    costs.set(struct.pos.x, struct.pos.y, 1);
-                } else if (struct.structureType !== STRUCTURE_CONTAINER &&
-                    (struct.structureType !== STRUCTURE_RAMPART ||
-                        !struct.my)) {
-                    //不能穿过不能步行的建筑物
-                    costs.set(struct.pos.x, struct.pos.y, 0xff);
-                }
-            });
+    // We can't actually walk on sources-- set `range` to 1 
+    // so we path next to it.
 
-            // Avoid creeps in the room
-            room.find(FIND_CREEPS).forEach(function (creep) {
-                costs.set(creep.pos.x, creep.pos.y, 0xff);
-            });
+    let goals = _.map(bourns, function (source) {
+        return { pos: source.pos, range: 1 };
+    });
 
-            return costs;
-        },
-    }
-);
+    console.log('goals',goals);
 
-let pos = ret.path[0];
-creep.move(creep.pos.getDirectionTo(pos));
+    // 坐标以及目的地
+    // 目标或一系列目标。如果提供了多个目标，则将返回从所有目标中找到的最便宜的路径。目标是RoomPosition或下面定义的对象。
+    let ret = PathFinder.search(
+        origin.pos, goals,
+        {
+            // We need to set the defaults costs higher so that we
+            // can set the road cost lower in `roomCallback`
+            plainCost: 2,
+            swampCost: 10,
+            roomCallback: function (roomName) {
+                // 获取所在房间
+                let room = Game.rooms[roomName];
+                // In this example `room` will always exist, but since 
+                // PathFinder supports searches which span multiple rooms 
+                // you should be careful!
+                if (!room) return;
+                let costs = new PathFinder.CostMatrix;
+
+                room.find(FIND_STRUCTURES).forEach(function (struct) {
+                    if (struct.structureType === STRUCTURE_ROAD) {
+                        // Favor roads over plain tiles
+                        costs.set(struct.pos.x, struct.pos.y, 1);
+                    } else if (struct.structureType !== STRUCTURE_CONTAINER &&
+                        (struct.structureType !== STRUCTURE_RAMPART ||
+                            !struct.my)) {
+                        // Can't walk through non-walkable buildings
+                        costs.set(struct.pos.x, struct.pos.y, 0xff);
+                    }
+                });
+
+                // Avoid creeps in the room
+                room.find(FIND_CREEPS).forEach(function (creep) {
+                    costs.set(creep.pos.x, creep.pos.y, 0xff);
+                });
+
+                return costs;
+            },
+        }
+    );
+    
+    console.log('ret',ret);
+    // let pos = ret.path[0];
+    // creep.move(creep.pos.getDirectionTo(pos));
+
+}

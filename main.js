@@ -1,7 +1,7 @@
 var creepList=[
     {
-        'Name':'Mine',
-        'Memory':'mine',
+        'Name':'Collect',
+        'Memory':'collect',
         'Action':[WORK,WORK,WORK,WORK,WORK,MOVE,CARRY]
     },
     {

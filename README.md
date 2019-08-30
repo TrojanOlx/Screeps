@@ -15,5 +15,13 @@
 |Collect|Collect[Game.Time]|collect|WORK\*5,MOVE\*1,CARRY\*1|2|
 |Harvester|Harvester[Game.Time]|harvester|WORK\*1,MOVE\*3,CARRY\*3|2|
 |Builder|Builder[Game.Time]|builder|WORK\*1,MOVE\*4,CARRY\*3|1|
+|Upgrader|Upgrader[Game.Time]|upgrader|WORK\*3,MOVE\*2,CARRY\*2|1|   
+
+### 路程   
+||Start|End|Cost|Ops|
+|:--:|:--:|:--:|:--:|:--:|
+||Controller|Containers.*|||
+|Harvester|Spawn|Containers.*|2|
+|Builder|Builder[Game.Time]|builder|WORK\*1,MOVE\*4,CARRY\*3|1|
 |Upgrader|Upgrader[Game.Time]|upgrader|WORK\*3,MOVE\*2,CARRY\*2|1|
 
