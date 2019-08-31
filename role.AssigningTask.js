@@ -28,8 +28,4 @@ function MineRole(creep){
     if(!creep.memory.out){
         creep.memory.out = '旁边的缓存罐';
     }
-
-    // 工作内容
-    
-
 }
