@@ -1,22 +1,98 @@
-{
-    "type": "energy",
-    "energy": {
+[
+    {
         "room": {
-            "name": "W32S22",
-            "energyAvailable": 800,
-            "energyCapacityAvailable": 800,
+            "name": "sim",
+            "energyAvailable": 550,
+            "energyCapacityAvailable": 550,
+            "survivalInfo": {},
             "visual": {
-                "roomName": "W32S22"
+                "roomName": "sim"
             }
         },
         "pos": {
-            "x": 33,
-            "y": 38,
-            "roomName": "W32S22"
+            "x": 35,
+            "y": 20,
+            "roomName": "sim"
         },
-        "id": "5d69c978d2b64f7a1b204a55",
-        "energy": 131,
-        "amount": 131,
-        "resourceType": "energy"
+        "id": "b708012056d1580d04f534de",
+        "energy": 2850,
+        "energyCapacity": 3000,
+        "ticksToRegeneration": 65
+    },
+    {
+        "room": {
+            "name": "sim",
+            "energyAvailable": 550,
+            "energyCapacityAvailable": 550,
+            "survivalInfo": {},
+            "visual": {
+                "roomName": "sim"
+            }
+        },
+        "pos": {
+            "x": 43,
+            "y": 44,
+            "roomName": "sim"
+        },
+        "id": "3f8b38e698b36c6b458e7b34",
+        "energy": 3000,
+        "energyCapacity": 3000
+    },
+    {
+        "room": {
+            "name": "sim",
+            "energyAvailable": 550,
+            "energyCapacityAvailable": 550,
+            "survivalInfo": {},
+            "visual": {
+                "roomName": "sim"
+            }
+        },
+        "pos": {
+            "x": 6,
+            "y": 44,
+            "roomName": "sim"
+        },
+        "id": "3a063947631b67c448ab3eaa",
+        "energy": 3000,
+        "energyCapacity": 3000
+    },
+    {
+        "room": {
+            "name": "sim",
+            "energyAvailable": 550,
+            "energyCapacityAvailable": 550,
+            "survivalInfo": {},
+            "visual": {
+                "roomName": "sim"
+            }
+        },
+        "pos": {
+            "x": 35,
+            "y": 2,
+            "roomName": "sim"
+        },
+        "id": "c2ca308b864d4b7894574708",
+        "energy": 3000,
+        "energyCapacity": 3000
+    },
+    {
+        "room": {
+            "name": "sim",
+            "energyAvailable": 550,
+            "energyCapacityAvailable": 550,
+            "survivalInfo": {},
+            "visual": {
+                "roomName": "sim"
+            }
+        },
+        "pos": {
+            "x": 2,
+            "y": 1,
+            "roomName": "sim"
+        },
+        "id": "9b5490423b061184d4828090",
+        "energy": 3000,
+        "energyCapacity": 3000
     }
-}
+]
